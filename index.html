@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&family=Special+Elite&display=swap" rel="stylesheet">
+
     <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
 
@@ -22,7 +23,7 @@
       <h2>Image Identification App<img  src="logo.gif" width="100px" height="100px"></h2>
      </div>
       <hr>
-      <div class="col-lg-6 col-md-6 col-xs-12"  style="background-color: rgb(250, 173, 162);border: rgb(143, 140, 140) 3px solid;">
+      <div class="col-lg-6 col-md-6 col-xs-12"  style="background-color: rgb(250, 173, 162);border: rgb(143, 140, 140) 3px solid; ">
         <label style="font-size: large;">Webcam View :</label>
         <div class="cam" id="liveCam"></div>
         <button onclick="takePic()" class="btn btn-success">Capture Pic</button>
@@ -31,10 +32,10 @@
       <div class="col-lg-6 col-md-6 col-xs-12" style="background-color: rgb(250, 139, 121);border: rgb(175, 165, 165) 3px solid;">
       <label style="font-size: large;">Captured Picture :</label>
       <div class="cam" id="capturedPic"></div>
-      <button class="btn btn-success">Identify Pic</button>
+      <button class="btn btn-success" onclick="check()">Identify Pic</button>
       </div>
     </center> 
-      <div class="col-xs-12 footer_div"><h4 class="col-sm-6 col-xs-12"> <img src="blub.gif"> <span id="object_name" ></span> </h4> </div>
+      <div class="col-xs-12 footer_div"><h4 class="col-sm-6 col-xs-12"> <img src="blub.gif"> <span  id="output" ></span> </h4> </div>
       <div class="footer" style="background-color: rgb(187, 178, 178);"><label style="color:white;font-weight: bold; text-align: center;">Developed by ~ Srinjay Shrinivas Shankar</h3></div>
       
      
